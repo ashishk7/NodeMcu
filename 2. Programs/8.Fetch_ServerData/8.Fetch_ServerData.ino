@@ -31,7 +31,7 @@ void loop()
 {
   if (client.connect(server,80))     // "184.106.153.149" or api.thingspeak.com 
   {   //Serial.println("connected");
-      client.print(String("GET https://api.thingspeak.com/channels/768797/feeds.json?api_key=2N4ND56PL7XIFA0F&results=1/") + " HTTP/1.1\r\n" +
+      client.print(String("GET https://api.thingspeak.com/channels/577527/feeds.json?api_key=9E9L480OZE16RZSP&results=1/") + " HTTP/1.1\r\n" +
              "Host: " + server + "\r\n" +
              "Connection: close\r\n" +
              "\r\n");
