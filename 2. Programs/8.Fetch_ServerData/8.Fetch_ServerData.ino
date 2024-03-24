@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h>
 #include <ArduinoJson.h>
 String decodeJSON(char *json);
-const char* ssid = "Redmi Ashish";    // Enter SSID here
-const char* password = "ashish@8894";  //Enter Password here
+const char* ssid = "UNCIA";    // Enter SSID here
+const char* password = "FlySky@88";  //Enter Password here
 const char* server = "api.thingspeak.com";
 WiFiClient client;
 
@@ -31,7 +31,7 @@ void loop()
 {
   if (client.connect(server,80))     // "184.106.153.149" or api.thingspeak.com 
   {   //Serial.println("connected");
-      client.print(String("GET https://api.thingspeak.com/channels/577527/feeds.json?api_key=9E9L480OZE16RZSP&results=1/") + " HTTP/1.1\r\n" +
+      client.print(String("GET https://api.thingspeak.com/channels/549015/feeds.json?api_key=YNFPSSYNLXCX15PZ&results=1") + " HTTP/1.1\r\n" +
              "Host: " + server + "\r\n" +
              "Connection: close\r\n" +
              "\r\n");
