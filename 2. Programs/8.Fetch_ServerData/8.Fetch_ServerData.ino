@@ -1,7 +1,12 @@
+/*
+Written by Ashish Kumar
+Gmail: ashishmarch12@gmail.com
+*/
+
 #include <ESP8266WiFi.h>
 #include <ArduinoJson.h>
 String decodeJSON(char *json);
-const char* ssid = "UNCIA";    // Enter SSID here
+const char* ssid = "ashishfpv";    // Enter SSID here
 const char* password = "FlySky@88";  //Enter Password here
 const char* server = "api.thingspeak.com";
 WiFiClient client;
@@ -36,7 +41,7 @@ void loop()
              "Connection: close\r\n" +
              "\r\n");
 
-       static char responseBuffer[3*1024]; // Buffer for received data
+      static char responseBuffer[3*1024]; // Buffer for received data
 
       while (client.connected() || client.available())
             {if (client.available())
@@ -76,7 +81,7 @@ String decodeJSON(char *json) {
     JsonObject channel = doc["feeds"][0];                 // Now we can read 'feeds' values and so-on
     String field1 = channel["field1"];
     Serial.println("Field1: "+field1);
+    if(field1=="0") {digitalWrite(D0,LOW);} //pins on esp8266 are active LOW sometimes. Therefore Low voltage will turn it ON
     if(field1=="1") {digitalWrite(D0,HIGH);}
-    if(field1=="0") {digitalWrite(D0,LOW);}
 
 }
