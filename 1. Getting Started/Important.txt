@@ -1,6 +1,9 @@
 Node Mcu Drivers:
 https://github.com/nodemcu/nodemcu-devkit/tree/master/Drivers
 
+USB Drivers
+https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads
+
 Preferences Link:
 http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
