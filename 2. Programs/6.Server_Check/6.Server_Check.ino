@@ -1,8 +1,6 @@
 #include <ESP8266WiFi.h>
-
-const char* ssid = "Redmi Ashish";
-const char* password = "ashish@8894";
-
+const char* ssid = "Pixel";
+const char* password = "CrossFire";
 const char* host = "api.thingspeak.com";
 
 
@@ -32,7 +30,7 @@ void loop()
     Serial.println("connected]");
 
     Serial.println("[Sending a request]");
-    client.print(String("GET https://api.thingspeak.com/channels/768797/feeds.json?api_key=2N4ND56PL7XIFA0F&results=1/") + " HTTP/1.1\r\n" +
+    client.print(String("GET https://api.thingspeak.com/channels/549015/feeds.json?api_key=YNFPSSYNLXCX15PZ&results=1") + " HTTP/1.1\r\n" +
                  "Host: " + host + "\r\n" +
                  "Connection: close\r\n" +
                  "\r\n"

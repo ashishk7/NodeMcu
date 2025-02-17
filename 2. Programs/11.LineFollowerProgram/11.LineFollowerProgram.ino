@@ -1,10 +1,6 @@
 void setup() {
-pinMode(D0,INPUT);
-pinMode(D1,INPUT);
-pinMode(D2,OUTPUT);
-pinMode(D3,OUTPUT);
-pinMode(D4,OUTPUT);
-pinMode(D5,INPUT);
+pinMode(D0,INPUT); pinMode(D1,INPUT); 
+pinMode(D2,OUTPUT);pinMode(D3,OUTPUT);pinMode(D4,OUTPUT);pinMode(D5,INPUT);
 }
 
 void loop() {

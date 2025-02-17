@@ -4,7 +4,7 @@ pinMode(LED, OUTPUT);     // set the digital pin as output.
 }
 void loop() {
 digitalWrite(LED, HIGH);  // turn the LED off.(Note that LOW is the voltage level but actually
-delay(100);              // wait for 1 second.
+delay(200);              // wait for 1 second.
 digitalWrite(LED, LOW);   // turn the LED on.
-delay(100);              // wait for 1 second.
+delay(200);              // wait for 1 second.
 }

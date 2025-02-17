@@ -1,6 +1,6 @@
 #include <ESP8266WiFi.h>
 String decodeJSON(char *json);
-const char* ssid = "UNCIA";    // Enter SSID here
+const char* ssid = "";    // Enter SSID here
 const char* password = "FlySky@88";  //Enter Password here
 const char* server = "api.thingspeak.com";
 WiFiClient client;
